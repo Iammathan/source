@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.AttachmentDetails" table="AttachmentDetails" catalog="Forms">
+        <id name="attachmentId" type="java.lang.Long">
+            <column name="ATTACHMENT_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="contactDetailsId" type="java.lang.Long">
+            <column name="CONTACT_DETAILS_ID" />
+        </property>
+        <property name="attachmentName" type="string">
+            <column name="ATTACHMENT_NAME" />
+        </property>
+        <property name="attachmentLocation" type="string">
+            <column name="ATTACHMENT_LOCATION" />
+        </property>
+        <property name="fileSize" type="java.lang.Long">
+            <column name="FILE_SIZE" />
+        </property>
+        <property name="fileType" type="string">
+            <column name="FILE_TYPE" />
+        </property>
+        <property name="uploadedTime" type="java.lang.Long">
+            <column name="UPLOADED_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

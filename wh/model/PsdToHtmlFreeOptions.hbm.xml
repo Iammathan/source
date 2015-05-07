@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.PsdToHtmlFreeOptions" table="PsdToHtmlFreeOptions" catalog="Forms">
+        <id name="freeAddonId" type="java.lang.Long">
+            <column name="FREE_ADDON_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="layout" type="string">
+            <column name="LAYOUT" />
+        </property>
+        <property name="font" type="string">
+            <column name="FONT" />
+        </property>
+        <property name="nonWebFont" type="string">
+            <column name="NON_WEB_FONT" />
+        </property>
+        <property name="advancedSemanticData" type="java.lang.Boolean">
+            <column name="ADVANCED_SEMANTIC_DATA" />
+        </property>
+        <property name="wcag2" type="java.lang.Boolean">
+            <column name="WCAG_2" />
+        </property>
+        <property name="dynamicDropDownMenu" type="java.lang.Boolean">
+            <column name="DYNAMIC_DROP_DOWN_MENU" />
+        </property>
+        <property name="dreamweaverCompatability" type="java.lang.Boolean">
+            <column name="DREAMWEAVER_COMPATABILITY" />
+        </property>
+        <property name="browserCompatability" type="string">
+            <column name="BROWSER_COMPATABILITY" length="500" />
+        </property>
+        <property name="wcag2_1" type="java.lang.Boolean">
+            <column name="WCAG2" />
+        </property>
+        <property name="cssVersion" type="string">
+            <column name="CSS_VERSION" />
+        </property>
+        <property name="commentedCss" type="java.lang.Boolean">
+            <column name="COMMENTED_CSS" />
+        </property>
+        <property name="codingType" type="string">
+            <column name="CODING_TYPE" />
+        </property>
+        <property name="commentedHtml" type="java.lang.Boolean">
+            <column name="COMMENTED_HTML" />
+        </property>
+        <property name="optimizedForLoadSpeed" type="java.lang.Boolean">
+            <column name="OPTIMIZED_FOR_LOAD_SPEED" />
+        </property>
+        <property name="seoSemanticCoding" type="java.lang.Boolean">
+            <column name="SEO_SEMANTIC_CODING" />
+        </property>
+        <property name="jsLibrary" type="string">
+            <column name="JS_LIBRARY" />
+        </property>
+        <property name="corouselImage" type="java.lang.Boolean">
+            <column name="COROUSEL_IMAGE" />
+        </property>
+        <property name="tooltip" type="java.lang.Boolean">
+            <column name="TOOLTIP" />
+        </property>
+    </class>
+</hibernate-mapping>

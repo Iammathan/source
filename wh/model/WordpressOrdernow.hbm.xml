@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.WordpressOrdernow" table="WordpressOrdernow" catalog="Forms">
+        <id name="wordpressOrderId" type="java.lang.Long">
+            <column name="WORDPRESS_ORDER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="contactDetailsId" type="long">
+            <column name="CONTACT_DETAILS_ID" not-null="true" />
+        </property>
+        <property name="htmlFreeAddonId" type="java.lang.Long">
+            <column name="HTML_FREE_ADDON_ID" />
+        </property>
+        <property name="htmlPaidAddonId" type="java.lang.Long">
+            <column name="HTML_PAID_ADDON_ID" />
+        </property>
+        <property name="isTheme" type="java.lang.Boolean">
+            <column name="IS_THEME" />
+        </property>
+        <property name="isPlugin" type="java.lang.Boolean">
+            <column name="IS_PLUGIN" />
+        </property>
+        <property name="isQuoted" type="java.lang.Boolean">
+            <column name="IS_QUOTED" />
+        </property>
+        <property name="numberOfHomePage" type="java.lang.Integer">
+            <column name="NUMBER_OF_HOME_PAGE" />
+        </property>
+        <property name="numberOfSubpage" type="java.lang.Integer">
+            <column name="NUMBER_OF_SUBPAGE" />
+        </property>
+    </class>
+</hibernate-mapping>

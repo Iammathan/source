@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.PsdToHtmlOrdernow" table="PsdToHtmlOrdernow" catalog="Forms">
+        <id name="orderId" type="java.lang.Long">
+            <column name="ORDER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="contactDetailsId" type="long">
+            <column name="CONTACT_DETAILS_ID" not-null="true" />
+        </property>
+        <property name="freeAddonId" type="long">
+            <column name="FREE_ADDON_ID" not-null="true" />
+        </property>
+        <property name="paidAddonId" type="java.lang.Long">
+            <column name="PAID_ADDON_ID" />
+        </property>
+        <property name="numberOfLandingPage" type="java.lang.Integer">
+            <column name="NUMBER_OF_LANDING_PAGE" />
+        </property>
+        <property name="numberOfInnerPage" type="java.lang.Integer">
+            <column name="NUMBER_OF_INNER_PAGE" />
+        </property>
+    </class>
+</hibernate-mapping>

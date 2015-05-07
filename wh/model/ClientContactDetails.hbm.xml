@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.ClientContactDetails" table="ClientContactDetails" catalog="Forms">
+        <id name="contactDetailsId" type="java.lang.Long">
+            <column name="CONTACT_DETAILS_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" />
+        </property>
+        <property name="phoneNumber" type="string">
+            <column name="PHONE_NUMBER" />
+        </property>
+        <property name="countryCode" type="string">
+            <column name="COUNTRY_CODE" />
+        </property>
+        <property name="projectBreif" type="string">
+            <column name="PROJECT_BREIF" length="1000" />
+        </property>
+        <property name="addedLinks" type="string">
+            <column name="ADDED_LINKS" />
+        </property>
+        <property name="isAttachments" type="java.lang.Boolean">
+            <column name="IS_ATTACHMENTS" />
+        </property>
+        <property name="attachmentId" type="java.lang.Long">
+            <column name="ATTACHMENT_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

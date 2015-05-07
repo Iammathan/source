@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.Contactus" table="Contactus" catalog="Forms">
+        <id name="contactId" type="java.lang.Long">
+            <column name="CONTACT_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="time" type="long">
+            <column name="TIME" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="200" not-null="true" />
+        </property>
+        <property name="message" type="string">
+            <column name="MESSAGE" length="1000" />
+        </property>
+        <property name="generatedTokenId" type="long">
+            <column name="GENERATED_TOKEN_ID" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

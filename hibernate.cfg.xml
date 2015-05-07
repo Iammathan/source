@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Forms</property>
+    <property name="hibernate.connection.username">root</property>
+    <!--<property name="hibernate.hbm2ddl.auto">create</property>-->
+    <mapping resource="wh/model/Contactus.hbm.xml"/>
+    <mapping resource="wh/model/ClientContactDetails.hbm.xml"/>
+    <mapping resource="wh/model/PsdToEmailOrdernow.hbm.xml"/>
+    <mapping resource="wh/model/PsdToHtmlOrdernow.hbm.xml"/>
+    <mapping resource="wh/model/AttachmentDetails.hbm.xml"/>
+    <mapping resource="wh/model/Notifyme.hbm.xml"/>
+    <mapping resource="wh/model/PsdToHtmlFreeOptions.hbm.xml"/>
+    <mapping resource="wh/model/PsdToEmailFreeOption.hbm.xml"/>
+    <mapping resource="wh/model/PsdToEmailIntegrationOptions.hbm.xml"/>
+    <mapping resource="wh/model/PsdToHtmlPaidOptions.hbm.xml"/>
+    <mapping resource="wh/model/PsdToEmailPaidOption.hbm.xml"/>
+    <mapping resource="wh/model/WebDesignOrdernow.hbm.xml"/>
+    <mapping resource="wh/model/WordpressOrdernow.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

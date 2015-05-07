@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.PsdToEmailOrdernow" table="PsdToEmailOrdernow" catalog="Forms">
+        <id name="psdtoemailOrderId" type="java.lang.Long">
+            <column name="PSDTOEMAIL_ORDER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="contactDetailsId" type="java.lang.Long">
+            <column name="CONTACT_DETAILS_ID" />
+        </property>
+        <property name="numberOfPage" type="long">
+            <column name="NUMBER_OF_PAGE" not-null="true" />
+        </property>
+        <property name="mailPaidOptionId" type="java.lang.Long">
+            <column name="MAIL_PAID_OPTION_ID" />
+        </property>
+        <property name="mailFreeOptionId" type="java.lang.Long">
+            <column name="MAIL_FREE_OPTION_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

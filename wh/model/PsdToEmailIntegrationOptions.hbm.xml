@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.PsdToEmailIntegrationOptions" table="PsdToEmailIntegrationOptions" catalog="Forms">
+        <id name="emailIntegrationId" type="java.lang.Long">
+            <column name="EMAIL_INTEGRATION_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="campaignMonitor" type="java.lang.Boolean">
+            <column name="CAMPAIGN_MONITOR" />
+        </property>
+        <property name="mailChimp" type="java.lang.Boolean">
+            <column name="MAIL_CHIMP" />
+        </property>
+        <property name="zohoCampaigns" type="java.lang.Boolean">
+            <column name="ZOHO_CAMPAIGNS" />
+        </property>
+    </class>
+</hibernate-mapping>

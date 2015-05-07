@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 2, 2015 9:19:20 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="wh.model.PsdToHtmlPaidOptions" table="PsdToHtmlPaidOptions" catalog="Forms">
+        <id name="paidAddonId" type="java.lang.Long">
+            <column name="PAID_ADDON_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="isResponsiveLayout" type="java.lang.Boolean">
+            <column name="IS_RESPONSIVE_LAYOUT" />
+        </property>
+        <property name="mobileCompatability" type="java.lang.Boolean">
+            <column name="MOBILE_COMPATABILITY" />
+        </property>
+        <property name="isPrintedCss" type="java.lang.Boolean">
+            <column name="IS_PRINTED_CSS" />
+        </property>
+        <property name="isWcag508" type="java.lang.Boolean">
+            <column name="IS_WCAG508" />
+        </property>
+        <property name="cssOption" type="string">
+            <column name="CSS_OPTION" length="100" />
+        </property>
+        <property name="customFontElements" type="java.lang.Boolean">
+            <column name="CUSTOM_FONT_ELEMENTS" />
+        </property>
+        <property name="tabs" type="java.lang.Boolean">
+            <column name="TABS" />
+        </property>
+        <property name="formValidation" type="java.lang.Boolean">
+            <column name="FORM_VALIDATION" />
+        </property>
+        <property name="animatedFilters" type="java.lang.Boolean">
+            <column name="ANIMATED_FILTERS" />
+        </property>
+        <property name="slider" type="java.lang.Boolean">
+            <column name="SLIDER" />
+        </property>
+        <property name="customScroll" type="java.lang.Boolean">
+            <column name="CUSTOM_SCROLL" />
+        </property>
+    </class>
+</hibernate-mapping>
